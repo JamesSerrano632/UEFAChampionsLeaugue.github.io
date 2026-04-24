@@ -6,14 +6,18 @@
 </head>
 <body>
 <h1 style="color: white; text-align: center;font-size: 300%; background-color: rgb(69, 2, 131);font-family: Arial, Helvetica, sans-serif;">UEFA CHAMPIONS LEAGUE</h1>
-
-
-<ol>
+<p class="flip" onclick="myfunction()">Teams</p>
+<div= id panel>
+  <ol>
   <li style="color: white; font-size: large;">Barcelona FC</li>
     <li style="color: white; font-size: large;">Real Madrid</li>
       <li style="color: white; font-size: large;">Arsenal</li>
     
 </ol>
+
+</div>
+
+
  
 <style>
   body{
@@ -21,8 +25,15 @@
   background-size: cover;      
   background-repeat: no-repeat; 
   }
+  #panel .flip{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: rgb(3, 3, 119);
+  }
   #panel{
     display: none;
+    cursor: auto;
   }
 </style>
 <script>
