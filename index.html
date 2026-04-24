@@ -20,16 +20,21 @@
   background-image: url("img/background.jpg");
   background-size: cover;      
   background-repeat: no-repeat; 
- 
-    padding-top: 100px
-  
-
-
-    
+  }
+  #panel{
+    display: none;
   }
 </style>
- 
-</style>
+<script>
+  function myfunction(){
+    var x=document.getElementById("panel");
+    if(x.style.display === "none")
+    x.style.display="block";
+  }else{
+    x.style.display="none";
+  }
+
+</script>
 
 
 </body>
