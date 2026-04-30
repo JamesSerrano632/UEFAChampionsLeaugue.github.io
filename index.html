@@ -10,9 +10,9 @@
  <h1>UEFA CHAMPIONS LEAGUE</h1>
 </header>
 
-  <div>
-<div class="flip" onclick="togglePanel(panel)" style="color: white;">Teams</div>
-<div class="flip" onclick="togglePanel(panel)" style="color: white;">Table</div>
+  <div class="menu">
+<div class="flip" onclick="togglePanel('teams panel')" style="color: white;">Teams</div>
+<div class="flip" onclick="togglePanel('table panel')" style="color: white;">Table</div>
 
 </div>
 
@@ -105,7 +105,7 @@ function togglePanel(id){
   var panel = document.getElementById(id);
 
   
-  document.querySelectorAll(".panel").forEach(p => {
+  document.querySelectorAll("panel").forEach(p => {
     if(p !== panel){
       p.classList.remove("show");
     }
