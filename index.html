@@ -3,13 +3,12 @@
 <head>
 <title>UEFA CHAMPIONS LEAGUE</title>
 <link rel="icon" type="image/x-icon" href="img/trophy.png">
-<link rel="stylesheet" href="styles.css" />
 </head>
 <header>
- <h1>UEFA CHAMPIONS LEAGUE</h1>
+ <h1 id="h1">CHAMPIONS LEAGUE</h1>
 </header>
 <body>
-<p class="flip" onclick="myfunction()" style="color: white;">Teams</p>
+<p  class="flip" onclick="myfunction()" style="color: white;">Teams</p>
 <p class="flip" onclick="myfunction()" style="color: white;">Table</p>
 <div id="panel">
   <ol>
@@ -54,7 +53,33 @@
 </ol>
 
 </div>
-
+<style>
+   background-image:url("img/background.jpg");      
+  background-repeat:no-repeat; 
+  background-size:cover;
+ header{
+  padding: 0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(29, 0, 66);
+  ;font-size: 200%;
+  }
+  
+  #panel .flip{
+    padding: 0;
+    text-align: center;
+    color: white;
+    background-color: rgb(3, 3, 119);
+  }
+  #panel{
+    display: none;
+    cursor: auto;
+  }
+ #panel ol li{
+  font-size: x-large;
+  color: white;
+ }
+</style>
 <script>
   function myfunction(){
     var x=document.getElementById("panel");
