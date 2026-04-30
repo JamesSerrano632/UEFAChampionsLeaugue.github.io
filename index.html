@@ -8,8 +8,8 @@
  <h1>UEFA CHAMPIONS LEAGUE</h1>
 </header>
 <body>
-<p class="flip" onclick="myfunction()" style="color: white;">Teams</p>
-<p class="flip" onclick="myfunction()" style="color: white;">Table</p>
+<div class="flip" onclick="myfunction()" style="color: white;">Teams</div>
+<div class="flip" onclick="myfunction()" style="color: white;">Table</div>
 <div id="panel">
   <ol>
   <li>Arsenal</li>
@@ -62,13 +62,17 @@
 
   
  header{
-  border: 200px; 
-  border-color: blueviolet;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
- 
-  }
+}
+div{
+  background-color: black;
+  border:10px solid grey;
+  width: 500px;
+  padding: 50px;
+  margin: 20px;
+}
   
   #panel.flip{
     padding: 0;
