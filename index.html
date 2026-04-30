@@ -11,12 +11,12 @@
 </header>
 
   <div>
-<div class="flip" onclick="myfunction()" style="color: white;">Teams</div>
-<div class="flip" onclick="myfunction()" style="color: white;">Table</div>
+<div class="flip" onclick="togglePanel(panel)" style="color: white;">Teams</div>
+<div class="flip" onclick="togglePanel(panel)" style="color: white;">Table</div>
 
 </div>
 
-<div id="panel">
+<div id="panel" class="panel">
   <ol>
   <li>Arsenal</li>
      <li>Baryern Munich</li>
@@ -89,8 +89,10 @@ div{
   }
   #panel{
     display: none;
-    cursor: auto;
-  }
+    }
+    .panel.show{
+      display: block;
+    }
  #panel ol li{
   font-size: x-large;
   color: white;
