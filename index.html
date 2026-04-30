@@ -99,16 +99,19 @@ div{
 </style>
 
 <script>
-  function myfunction(){
-    var x=document.getElementById("panel");
-    if(x.style.display === "none") {
-    x.style.display="block";
-  } else{
-    x.style.display="none";
-  }
+function togglePanel(id){
+  var panel = document.getElementById(id);
+
+  
+  document.querySelectorAll(".panel").forEach(p => {
+    if(p !== panel){
+      p.classList.remove("show");
+    }
+  });
+
+  
+  panel.classList.toggle("show");
 }
-
-
 </script>
 
 
