@@ -3,119 +3,162 @@
 <head>
 <title>UEFA CHAMPIONS LEAGUE</title>
 <link rel="icon" type="image/x-icon" href="img/trophy.png">
+<a href="index.html">
+  <img src="img/logoo.png" alt="My Logo" width="100">
+</a>
 </head>
->
+
 <body>
+
 <header>
  <h1>UEFA CHAMPIONS LEAGUE</h1>
 </header>
 
-  <div class="menu">
-<div class="flip" onclick="togglePanel('teams panel')" style="color: white;">Teams</div>
-<div class="flip" onclick="togglePanel('table panel')" style="color: white;">Table</div>
-
+<div class="menu">
+  <div class="flip" onclick="togglePanel('teamspanel')">Teams</div>
+  <div class="flip" onclick="togglePanel('tablepanel')">Table</div>
 </div>
 
-<div id="panel" class="panel">
+<div id="teamspanel" class="panel">
   <ol>
-  <li>Arsenal</li>
-     <li>Baryern Munich</li>
-      <li>Liverpool</li>
-      <li>Tottenham </li>
+    <li>Arsenal</li>
+    <li>Bayern Munich</li>
+    <li>Liverpool</li>
+    <li>Tottenham</li>
     <li>Barcelona</li>
-      <li>Chealse</li>
-      <li>Sportin CP </li>
+    <li>Chelsea</li>
+    <li>Sporting CP</li>
     <li>Man City</li>
-      <li>Real Madrid</li>
-      <li>Inter</li>
-    <li>Paris</li>
-      <li>Newcastle</li>
-      <li>Juventus</li>
-    <li>Atletico De Madrid</li>
-      <li>Atalanta</li>
-      <li>Leverkusen </li>
-    <li> B.Dortmund</li>
-      <li>Olympiacos</li>
-      <li>Club Brugge </li>
-    <li>Galatasaray</li>
-      <li>Monaco</li>
-      <li>Qarabag</li>
-    <li>Bodo/Glimt</li>
-      <li>Benfica</li>
-      <li>Marseille </li>
-    <li>Pafos</li>
-      <li>Union SG</li>
-      <li>PSV FC</li>
-    <li>Athletic Club </li>
-      <li>Napoli</li>
-      <li>Compenhagen</li>
-    <li>Ajax</li>
-      <li>Frankfurt</li>
-      <li>Slavia Praha </li>
-    <li>Villareal</li>
-      <li>Kairat Almaty </li>
-      
-    
-</ol>
-
+    <li>Real Madrid</li>
+    <li>Inter Milan</li>
+    <li>Paris Saint-Germain</li>
+    <li>Newcastle United</li>
+    <li>Juventus</li>
+    <li>Atletico Madrid</li>
+    <li>Atalanta</li>
+    <li>Borussia Dortmund</li>
+  </ol>
 </div>
+
+<div id="tablepanel" class="panel">
+  <table>
+  <thead>
+    <tr>
+      <th>Pos</th>
+      <th>Team</th>
+      <th>GP</th>
+      <th>W</th>
+      <th>D</th>
+      <th>L</th>
+      <th>GF</th>
+      <th>GA</th>
+      <th>GD</th>
+      <th>Pts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>Arsenal</td><td>7</td><td>4</td><td>2</td><td>1</td><td>15</td><td>7</td><td>+8</td><td>14</td></tr>
+    <tr><td>2</td><td>Bayern Munich</td><td>7</td><td>4</td><td>1</td><td>2</td><td>20</td><td>10</td><td>+10</td><td>13</td></tr>
+    <tr><td>3</td><td>Real Madrid</td><td>7</td><td>4</td><td>1</td><td>2</td><td>16</td><td>6</td><td>+10</td><td>13</td></tr>
+    <tr><td>4</td><td>Liverpool</td><td>7</td><td>4</td><td>1</td><td>2</td><td>14</td><td>8</td><td>+6</td><td>13</td></tr>
+    <tr><td>5</td><td>Tottenham</td><td>7</td><td>4</td><td>1</td><td>2</td><td>18</td><td>13</td><td>+5</td><td>13</td></tr>
+    <tr><td>6</td><td>Paris Saint-Germain</td><td>7</td><td>4</td><td>1</td><td>2</td><td>14</td><td>9</td><td>+5</td><td>13</td></tr>
+    <tr><td>7</td><td>Newcastle United</td><td>7</td><td>4</td><td>1</td><td>2</td><td>13</td><td>9</td><td>+4</td><td>13</td></tr>
+    <tr><td>8</td><td>Chelsea</td><td>7</td><td>4</td><td>1</td><td>2</td><td>16</td><td>13</td><td>+3</td><td>13</td></tr>
+
+    <tr><td>9</td><td>Barcelona</td><td>7</td><td>4</td><td>1</td><td>2</td><td>10</td><td>9</td><td>+1</td><td>13</td></tr>
+    <tr><td>10</td><td>Sporting CP</td><td>7</td><td>4</td><td>0</td><td>3</td><td>13</td><td>7</td><td>+6</td><td>12</td></tr>
+    <tr><td>11</td><td>Manchester City</td><td>7</td><td>3</td><td>3</td><td>1</td><td>14</td><td>10</td><td>+4</td><td>12</td></tr>
+    <tr><td>12</td><td>Atlético Madrid</td><td>7</td><td>3</td><td>2</td><td>2</td><td>19</td><td>15</td><td>+4</td><td>11</td></tr>
+    <tr><td>13</td><td>Atalanta</td><td>7</td><td>3</td><td>1</td><td>3</td><td>9</td><td>9</td><td>0</td><td>10</td></tr>
+    <tr><td>14</td><td>Inter Milan</td><td>7</td><td>3</td><td>1</td><td>3</td><td>13</td><td>15</td><td>-2</td><td>10</td></tr>
+    <tr><td>15</td><td>Juventus</td><td>7</td><td>3</td><td>0</td><td>4</td><td>11</td><td>11</td><td>0</td><td>9</td></tr>
+    <tr><td>16</td><td>Borussia Dortmund</td><td>7</td><td>2</td><td>3</td><td>2</td><td>10</td><td>14</td><td>-4</td><td>9</td></tr>
+
+  </tbody>
+</table>
+</div>
+
 <style>
-  body{
-  background-image:url("img/background.jpg");     
-  background-repeat: no-repeat;
-  background-size:cover;
+
+ table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgb(3, 3, 119);
+  }
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid white;
+  }
+  th {
+    background: rgb(3, 3, 119);
   }
 
-  
- header{
+body {
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
+  font-size: 180%;
 }
-div{
-  background-color: rgb(116, 4, 168);
-  border:10px solid rgb(13, 3, 160);
-  width: 200px;
-  padding: 50px;
+
+
+.menu {
   margin: 20px;
-  
 }
-  
-  .flip{
-    padding: 0;
-    text-align: center;
-    color: white;
-    background-color: rgb(3, 3, 119);
-  }
-  #panel{
-    display: none;
-    }
-    .panel.show{
-      display: block;
-    }
- #panel ol li{
-  font-size: x-large;
+
+
+.flip {
+  cursor: pointer;
+  text-align: center;
   color: white;
-  display: flex;
- }
+  background-color: rgb(3, 3, 119);
+  padding: 10px;
+  margin-bottom: 5px;
+  width: 200px;
+  font-size: x-large;
+}
+
+
+.panel {
+  display: none;
+  background-color: rgb(3, 3, 119);
+  border: 10px solid white;
+  width: 200px;
+  padding: 20px;
+  margin: 20px;
+  color: white;
+}
+
+.panel.show {
+  display: block;
+}
+
+.panel ol li {
+  font-size: large;
+}
 </style>
 
 <script>
-function togglePanel(id){
-  var panel = document.getElementById(id);
+function togglePanel(id) {
+  const panel = document.getElementById(id);
 
-  
-  document.querySelectorAll("panel").forEach(p => {
-    if(p !== panel){
+  panel.classList.toggle("show");
+
+  document.querySelectorAll(".panel").forEach(p => {
+    if (p !== panel) {
       p.classList.remove("show");
     }
   });
-
-  
-  panel.classList.toggle("show");
 }
 </script>
-
 
 </body>
 </html>
