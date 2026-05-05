@@ -1,106 +1,107 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-<title>UEFA CHAMPIONS LEAGUE</title>
-<link rel="icon" type="image/x-icon" href="img/trophy.png">
-<a href="index.html">
-  <img src="img/logoo.png" alt="My Logo" width="100">
-</a>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UEFA Champions League</title>
+  <link rel="icon" type="image/x-icon" href="img/trophy.png">
 </head>
 
 <body>
 
 <header>
- <h1>UEFA CHAMPIONS LEAGUE</h1>
+  <a href="index.html">
+    <img src="img/logoo.png" alt="Logo" width="100">
+  </a>
+  <h1>UEFA CHAMPIONS LEAGUE</h1>
 </header>
+
 
 <div class="menu">
   <div class="flip" onclick="togglePanel('teamspanel')">Teams</div>
   <div class="flip" onclick="togglePanel('tablepanel')">Table</div>
 </div>
 
-<div id="teamspanel" class="panel">
-  <ol>
-    <li>Arsenal</li>
-    <li>Bayern Munich</li>
-    <li>Liverpool</li>
-    <li>Tottenham</li>
-    <li>Barcelona</li>
-    <li>Chelsea</li>
-    <li>Sporting CP</li>
-    <li>Man City</li>
-    <li>Real Madrid</li>
-    <li>Inter Milan</li>
-    <li>Paris Saint-Germain</li>
-    <li>Newcastle United</li>
-    <li>Juventus</li>
-    <li>Atletico Madrid</li>
-    <li>Atalanta</li>
-    <li>Borussia Dortmund</li>
-  </ol>
+<div class="panels-container">
+
+ 
+
+  <div id="teamspanel" class="panel">
+    <ol>
+      <li>Arsenal</li>
+      <li>Bayern Munich</li>
+      <li>Liverpool</li>
+      <li>Tottenham</li>
+      <li>Barcelona</li>
+      <li>Chelsea</li>
+      <li>Sporting CP</li>
+      <li>Manchester City</li>
+      <li>Real Madrid</li>
+      <li>Inter Milan</li>
+      <li>Paris Saint-Germain</li>
+      <li>Newcastle United</li>
+      <li>Juventus</li>
+      <li>Atlético Madrid</li>
+      <li>Atalanta</li>
+      <li>Borussia Dortmund</li>
+    </ol>
+  </div>
+
+
+
+  <div id="tablepanel" class="panel">
+    <table>
+      <caption>Champions League Standings</caption>
+      <thead>
+        <tr>
+          <th>Pos</th>
+          <th>Team</th>
+          <th>GP</th>
+          <th>W</th>
+          <th>D</th>
+          <th>L</th>
+          <th>GF</th>
+          <th>GA</th>
+          <th>GD</th>
+          <th>Pts</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Arsenal</td><td>7</td><td>4</td><td>2</td><td>1</td><td>15</td><td>7</td><td>+8</td><td>14</td></tr>
+        <tr><td>2</td><td>Bayern Munich</td><td>7</td><td>4</td><td>1</td><td>2</td><td>20</td><td>10</td><td>+10</td><td>13</td></tr>
+        <tr><td>3</td><td>Real Madrid</td><td>7</td><td>4</td><td>1</td><td>2</td><td>16</td><td>6</td><td>+10</td><td>13</td></tr>
+        <tr><td>4</td><td>Liverpool</td><td>7</td><td>4</td><td>1</td><td>2</td><td>14</td><td>8</td><td>+6</td><td>13</td></tr>
+        <tr><td>5</td><td>Tottenham</td><td>7</td><td>4</td><td>1</td><td>2</td><td>18</td><td>13</td><td>+5</td><td>13</td></tr>
+        <tr><td>6</td><td>Paris Saint-Germain</td><td>7</td><td>4</td><td>1</td><td>2</td><td>14</td><td>9</td><td>+5</td><td>13</td></tr>
+        <tr><td>7</td><td>Newcastle United</td><td>7</td><td>4</td><td>1</td><td>2</td><td>13</td><td>9</td><td>+4</td><td>13</td></tr>
+        <tr><td>8</td><td>Chelsea</td><td>7</td><td>4</td><td>1</td><td>2</td><td>16</td><td>13</td><td>+3</td><td>13</td></tr>
+        <tr><td>9</td><td>Barcelona</td><td>7</td><td>4</td><td>1</td><td>2</td><td>10</td><td>9</td><td>+1</td><td>13</td></tr>
+        <tr><td>10</td><td>Sporting CP</td><td>7</td><td>4</td><td>0</td><td>3</td><td>13</td><td>7</td><td>+6</td><td>12</td></tr>
+        <tr><td>11</td><td>Manchester City</td><td>7</td><td>3</td><td>3</td><td>1</td><td>14</td><td>10</td><td>+4</td><td>12</td></tr>
+        <tr><td>12</td><td>Atlético Madrid</td><td>7</td><td>3</td><td>2</td><td>2</td><td>19</td><td>15</td><td>+4</td><td>11</td></tr>
+        <tr><td>13</td><td>Atalanta</td><td>7</td><td>3</td><td>1</td><td>3</td><td>9</td><td>9</td><td>0</td><td>10</td></tr>
+        <tr><td>14</td><td>Inter Milan</td><td>7</td><td>3</td><td>1</td><td>3</td><td>13</td><td>15</td><td>-2</td><td>10</td></tr>
+        <tr><td>15</td><td>Juventus</td><td>7</td><td>3</td><td>0</td><td>4</td><td>11</td><td>11</td><td>0</td><td>9</td></tr>
+        <tr><td>16</td><td>Borussia Dortmund</td><td>7</td><td>2</td><td>3</td><td>2</td><td>10</td><td>14</td><td>-4</td><td>9</td></tr>
+      </tbody>
+    </table>
+  </div>
+
 </div>
-
-<div id="tablepanel" class="panel">
-  <table>
-  <thead>
-    <tr>
-      <th>Pos</th>
-      <th>Team</th>
-      <th>GP</th>
-      <th>W</th>
-      <th>D</th>
-      <th>L</th>
-      <th>GF</th>
-      <th>GA</th>
-      <th>GD</th>
-      <th>Pts</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td>Arsenal</td><td>7</td><td>4</td><td>2</td><td>1</td><td>15</td><td>7</td><td>+8</td><td>14</td></tr>
-    <tr><td>2</td><td>Bayern Munich</td><td>7</td><td>4</td><td>1</td><td>2</td><td>20</td><td>10</td><td>+10</td><td>13</td></tr>
-    <tr><td>3</td><td>Real Madrid</td><td>7</td><td>4</td><td>1</td><td>2</td><td>16</td><td>6</td><td>+10</td><td>13</td></tr>
-    <tr><td>4</td><td>Liverpool</td><td>7</td><td>4</td><td>1</td><td>2</td><td>14</td><td>8</td><td>+6</td><td>13</td></tr>
-    <tr><td>5</td><td>Tottenham</td><td>7</td><td>4</td><td>1</td><td>2</td><td>18</td><td>13</td><td>+5</td><td>13</td></tr>
-    <tr><td>6</td><td>Paris Saint-Germain</td><td>7</td><td>4</td><td>1</td><td>2</td><td>14</td><td>9</td><td>+5</td><td>13</td></tr>
-    <tr><td>7</td><td>Newcastle United</td><td>7</td><td>4</td><td>1</td><td>2</td><td>13</td><td>9</td><td>+4</td><td>13</td></tr>
-    <tr><td>8</td><td>Chelsea</td><td>7</td><td>4</td><td>1</td><td>2</td><td>16</td><td>13</td><td>+3</td><td>13</td></tr>
-
-    <tr><td>9</td><td>Barcelona</td><td>7</td><td>4</td><td>1</td><td>2</td><td>10</td><td>9</td><td>+1</td><td>13</td></tr>
-    <tr><td>10</td><td>Sporting CP</td><td>7</td><td>4</td><td>0</td><td>3</td><td>13</td><td>7</td><td>+6</td><td>12</td></tr>
-    <tr><td>11</td><td>Manchester City</td><td>7</td><td>3</td><td>3</td><td>1</td><td>14</td><td>10</td><td>+4</td><td>12</td></tr>
-    <tr><td>12</td><td>Atlético Madrid</td><td>7</td><td>3</td><td>2</td><td>2</td><td>19</td><td>15</td><td>+4</td><td>11</td></tr>
-    <tr><td>13</td><td>Atalanta</td><td>7</td><td>3</td><td>1</td><td>3</td><td>9</td><td>9</td><td>0</td><td>10</td></tr>
-    <tr><td>14</td><td>Inter Milan</td><td>7</td><td>3</td><td>1</td><td>3</td><td>13</td><td>15</td><td>-2</td><td>10</td></tr>
-    <tr><td>15</td><td>Juventus</td><td>7</td><td>3</td><td>0</td><td>4</td><td>11</td><td>11</td><td>0</td><td>9</td></tr>
-    <tr><td>16</td><td>Borussia Dortmund</td><td>7</td><td>2</td><td>3</td><td>2</td><td>10</td><td>14</td><td>-4</td><td>9</td></tr>
-
-  </tbody>
-</table>
-</div>
-
+<p id="p" class="p">The UEFA Champions League is the most prestigious club football competition in the world, organized annually by UEFA and featuring the top teams from Europe’s strongest domestic leagues. It brings together elite clubs that qualify based on their league performance, including national champions and high-ranking teams, to compete across several stages: the qualifying rounds, the group stage, and the knockout phase. Each season delivers intense matches filled with world-class talent, tactical battles, and dramatic moments that often define football history.
+</p>
+<p id="p" class="p">The tournament is widely known for its high level of competition and global appeal, attracting millions of viewers from around the world. Clubs such as Real Madrid, Manchester City, Bayern Munich, and others have built legendary histories in the competition, producing unforgettable comebacks, last-minute goals, and iconic performances. The journey culminates in the final, one of the most-watched sporting events on the planet, where the two best teams compete for the famous trophy and the title of European champions. Winning it is considered the ultimate achievement in club football, symbolizing excellence, consistency, and greatness at the highest level.
+</p>
 <style>
-
- table {
-    width: 90%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    background: rgb(3, 3, 119);
-  }
-  th, td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid white;
-  }
-  th {
-    background: rgb(3, 3, 119);
-  }
 
 body {
   background-image: url("img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
 }
+
 
 header {
   text-align: center;
@@ -108,12 +109,21 @@ header {
   color: white;
   font-size: 180%;
 }
+.p{
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 170%;
+  max-width: 69%;
+}
 
 
 .menu {
-  margin: 20px;
+  display: flex;
+  justify-content:space-evenly ;
+  gap: 30px;
+  margin: 50px;
 }
-
 
 .flip {
   cursor: pointer;
@@ -121,29 +131,72 @@ header {
   color: white;
   background-color: rgb(3, 3, 119);
   padding: 10px;
-  margin-bottom: 5px;
   width: 200px;
   font-size: x-large;
+  transition: 0.3s;
+}
+
+.flip:hover {
+  background-color: rgb(0, 0, 180);
+}
+
+
+.panels-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin: 20px;
 }
 
 
 .panel {
   display: none;
   background-color: rgb(3, 3, 119);
-  border: 10px solid white;
-  width: 200px;
+  border: 5px solid white;
   padding: 20px;
-  margin: 20px;
   color: white;
+  flex: 1;
 }
 
 .panel.show {
   display: block;
 }
 
-.panel ol li {
-  font-size: large;
+
+#teamspanel {
+  max-width: 250px;
+  font-size: x-large;
 }
+
+#tablepanel {
+  flex: 3;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid white;
+  color: white;
+}
+
+caption {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .panels-container {
+    flex-direction:column
+  }
+}
+
 </style>
 
 <script>
@@ -162,3 +215,4 @@ function togglePanel(id) {
 
 </body>
 </html>
+
