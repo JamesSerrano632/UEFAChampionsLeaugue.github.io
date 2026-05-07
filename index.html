@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UEFA Champions League</title>
-  <link rel="icon" type="image/x-icon" href="img/trophy.png">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UEFA Champions League</title>
 
 <body>
 
@@ -19,16 +17,22 @@
 
 
 <div class="menu">
-  <div class="flip" onclick="togglePanel('teamspanel')">Teams</div>
-  <div class="flip" onclick="togglePanel('tablepanel')">Table</div>
+
+    <button onclick="togglePanel('teams')">Teams</button>
+
+    <button onclick="togglePanel('table')">Table</button>
+
+    <button onclick="togglePanel('players')">Top Players</button>
+
 </div>
- 
-<div class="panels-container">
 
- 
 
-  <div id="teamspanel" class="panel">
-    <ol>
+
+<section id="teams" class="panel">
+
+    <h2>Teams</h2>
+
+     <ol>
       <li>Arsenal</li>
       <li>Bayern Munich</li>
       <li>Liverpool</li>
@@ -46,11 +50,15 @@
       <li>Atalanta</li>
       <li>Borussia Dortmund</li>
     </ol>
-  </div>
+
+</section>
 
 
 
-  <div id="tablepanel" class="panel">
+<section id="table" class="panel">
+
+    <h2>Standings</h2>
+
     <table>
       <caption>Champions League Standings</caption>
       <thead>
@@ -86,143 +94,231 @@
         <tr><td>16</td><td>Borussia Dortmund</td><td>7</td><td>2</td><td>3</td><td>2</td><td>10</td><td>14</td><td>-4</td><td>9</td></tr>
       </tbody>
     </table>
-  </div>
 
-</div>
-<p id="p" class="p">The UEFA Champions League is the most prestigious club football competition in the world, organized annually by UEFA and featuring the top teams from Europe’s strongest domestic leagues. It brings together elite clubs that qualify based on their league performance, including national champions and high-ranking teams, to compete across several stages: the qualifying rounds, the group stage, and the knockout phase. Each season delivers intense matches filled with world-class talent, tactical battles, and dramatic moments that often define football history.
+</section>
+
+
+
+<section id="players" class="panel">
+
+    <h2>Top Players</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="img/haaland.jpg">
+            <h3>Haaland</h3>
+            <p>12 Goals</p>
+        </div>
+
+        <div class="card">
+            <img src="img/mbappe.jpg">
+            <h3>Mbappé</h3>
+            <p>10 Goals</p>
+        </div>
+
+        <div class="card">
+            <img src="img/vini.jpg">
+            <h3>Vinicius Jr</h3>
+            <p>8 Goals</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="about">
+
+    <h2>About</h2>
+
+    <p id="p" class="p">The UEFA Champions League is the most prestigious club football competition in the world, organized annually by UEFA and featuring the top teams from Europe’s strongest domestic leagues. It brings together elite clubs that qualify based on their league performance, including national champions and high-ranking teams, to compete across several stages: the qualifying rounds, the group stage, and the knockout phase. Each season delivers intense matches filled with world-class talent, tactical battles, and dramatic moments that often define football history.
 </p>
 <p id="p" class="p">The tournament is widely known for its high level of competition and global appeal, attracting millions of viewers from around the world. Clubs such as Real Madrid, Manchester City, Bayern Munich, and others have built legendary histories in the competition, producing unforgettable comebacks, last-minute goals, and iconic performances. The journey culminates in the final, one of the most-watched sporting events on the planet, where the two best teams compete for the famous trophy and the title of European champions. Winning it is considered the ultimate achievement in club football, symbolizing excellence, consistency, and greatness at the highest level.
 </p>
+
+</section>
+
+<footer>
+
+    <p>2026 Champions League Website</p>
+
+</footer>
 <style>
 
-body {
-  background-image: url("img/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-}
-  body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.55);
-  z-index: -1;
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+    url("img/background.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
 }
 
 
-header {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  font-size: 180%;
-}
-.p{
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  font-size: 170%;
-  max-width: 100%;
+
+header{
+    text-align:center;
+    padding:20px;
 }
 
-
-.menu {
-  display: flex;
-  justify-content:space-evenly ;
-  gap: 30px;
-  margin: 50px;
+header img{
+    width:90px;
 }
 
-.flip {
-  cursor: pointer;
-  text-align: center;
-  color: white;
-  background-color: rgb(3, 3, 119);
-  padding: 10px;
-  width: 200px;
-  font-size: x-large;
-  transition: 0.3s;
-}
-
-.flip:hover {
-  background-color: rgb(0, 0, 180);
+header h1{
+    font-size:50px;
 }
 
 
-.panels-container {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  margin: 20px;
+
+.menu{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-bottom:30px;
+    flex-wrap:wrap;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+
+    background-color:darkblue;
+    color:white;
+
+    font-size:18px;
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    background-color:blue;
+    transform:scale(1.05);
 }
 
 
-.panel {
-  display: none;
-  background-color: rgb(3, 3, 119);
-  border: 5px solid white;
-  padding: 20px;
-  border-radius: 12px;
-  backdrop-filter: blur(5px);
-  color: white;
-  flex: 1;
+.panel{
+    display:none;
+
+    width:80%;
+    margin:20px auto;
+
+    background:rgba(0,0,50,0.8);
+
+    padding:20px;
+
+    border-radius:10px;
 }
 
-.panel.show {
-  display: block;
-}
-
-
-#teamspanel {
-  max-width: 250px;
-  font-size: x-large;
-}
-
-#tablepanel {
-  flex: 3;
+.show{
+    display:block;
 }
 
 
-table {
-  width: 100%;
-  border-collapse: collapse;
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
 }
 
-th, td {
-  padding: 10px;
-  text-align: center;
-  border: 1px solid white;
-  color: white;
+th, td{
+    border:1px solid white;
+    padding:10px;
+    text-align:center;
 }
 
-caption {
-  margin-bottom: 10px;
-  font-weight: bold;
+th{
+    background-color:darkblue;
 }
 
 
-@media (max-width: 768px) {
-  .panels-container {
-    flex-direction:column
-  }
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:20px;
 }
+
+.card{
+    width:200px;
+
+    background:rgba(255,255,255,0.1);
+
+    padding:15px;
+
+    border-radius:10px;
+
+    text-align:center;
+}
+
+.card img{
+    width:80px;
+    height:80px;
+}
+
+
+
+.about{
+    width:80%;
+    margin:40px auto;
+
+    background:rgba(0,0,50,0.8);
+
+    padding:20px;
+
+    border-radius:10px;
+
+    line-height:1.8;
+    font-size:18px;
+}
+
+
+
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+
+    background:rgba(0,0,50,0.8);
+}
+
 
 </style>
 
 <script>
-function togglePanel(id) {
-  const panel = document.getElementById(id);
 
-  panel.classList.toggle("show");
+function togglePanel(id){
 
-  document.querySelectorAll(".panel").forEach(p => {
-    if (p !== panel) {
-      p.classList.remove("show");
-    }
-  });
+    const panels = document.querySelectorAll(".panel");
+
+    panels.forEach(function(panel){
+
+        if(panel.id === id){
+
+            panel.classList.toggle("show");
+
+        }
+
+        else{
+
+            panel.classList.remove("show");
+          }
+        });
+
 }
+
 </script>
 
 </body>
